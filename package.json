@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "type": "module",
   "description": "Electron and React  App",
-  "main": "main.js",
+  "main": "electron/main.js",
   "scripts": {
     "s1": "electron .",
     "dev1": "vite",
@@ -14,7 +14,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "electron": "electron .",
-    "rebuild": "electron-rebuild -f -w opencv4nodejs"
+        "rebuild": "electron-rebuild -f -w opencv4nodejs"
   },
   "dependencies": {
     "electron": "35.0.0",
