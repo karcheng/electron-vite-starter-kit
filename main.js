@@ -17,7 +17,7 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: false, // Important for security
       contextIsolation: true, // Required with `nodeIntegration: false`
-      preload: path.join(__dirname, 'preload.js'), // Path to your preload script
+      preload: path.join(path.dirname(new URL(import.meta.url).pathname), 'preload.js'), // Path to your preload script
       sandbox: false, // required for node integration in react
     },
   });
